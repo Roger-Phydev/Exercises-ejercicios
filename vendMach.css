@@ -1,0 +1,152 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+body{
+    background: #AAA;
+    display: flex;
+}
+.container,.title,.items,.below,.operate{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background: #000;
+    border-radius: 32px;
+    margin: 10px auto;
+    flex-basis: 500px;
+    flex-grow: 0.5;
+    flex-shrink: 2;
+    position: relative;
+}
+.title{
+    background: #C3C600;
+    color: #F64343;
+    padding: 20px 25% 10px;
+    text-align: center;
+    text-shadow: #000 0 0 5px;
+    border: 10px solid #000;
+    border-radius: 12px;
+}
+.items{
+    background: #000;
+    display: grid;
+    position: relative;
+    left: 0;
+    margin-left: 1%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: min-content min-content min-content;
+    text-align: center;
+}
+.items div{
+    background: #AAA;
+    border-bottom:10px ridge #666;
+    text-align: center;
+}
+.items div:first-child,.items div:nth-child(2),.items div:nth-child(4),.items div:nth-child(5),.items div:nth-child(7),.items div:nth-child(8){
+    border-right: 10px double #000;
+}
+.items img{
+    margin: 10px 5px;
+    height: 30%;
+}
+.items h3{
+    background: #C3C600;
+    color: #F64343;
+    text-shadow: #000 0 0 5px;
+    border: 10px solid #000;
+    border-radius: 20%;
+    display: inline-block;
+    width: 80%;
+    height: max-content;
+}
+.items button{
+    background: #FFF;
+    color: #F64343;
+    border: 10px solid #000;
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    bottom: 0;
+}
+.below{
+    background: #AAA;
+    text-align: center;
+    padding: 12px 25%;
+    color: #555;
+    border: 30px solid #000;
+}
+#screen{
+    padding: 30px 10px;
+    background-color: #2C4;
+    text-align: center;
+    font-family: monospace;
+    padding: 10px 5px;
+    border: 10px solid #888;
+}
+.operate{
+    background: #777;
+    text-align: center;
+}
+.operate div{
+    height: fit-content;
+    flex-basis: 100%;
+    text-align: center;
+    border: 10px double #24A;
+}
+.operate h4{
+    padding: 10px 5px;
+    text-align: center;
+    display: inline-block;   
+}
+.bill img{
+    box-sizing: border-box;
+    border: 10px solid #A34;
+    width: 100%;
+    display: inline-block;
+}
+.coin img{
+    border: 10px solid #A34;
+    margin: 0 25%;
+    width: 50%;
+    display: inline-block;
+}
+.change{
+    background-color: #48E;
+}
+.change img{
+    width: 100%;
+    text-align: center;
+}
+.change .coin img{
+    width: 50%;
+    margin: 0 25%;
+}
+.change .bill img{
+    width: 100%;
+}
+.change h4{
+    padding: 10px 5px;
+    text-align: center;
+    color: #000;
+}
+#introduce,#reset{
+    margin: 10px auto;
+    height: 100px;
+    color: #000;
+    font-size: 80px;
+    background: #48E;
+    outline: none;
+    border:3px solid #A34;
+    border-radius: 6px;
+    transition:ease-in-out 0.3s;
+}
+#introduce:hover,#reset:hover{
+    background: #6AF;
+}
+#introduce:active,#reset:active{
+    background: #24A;
+}
+#reset{
+    display: none;
+}

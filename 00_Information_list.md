@@ -1,4 +1,4 @@
-# Information list
+# Information list:
 
 ## 01. Fizzbuzz:
 ### Write a program that show in console (via print): numbers from 1 to 100 (including both of them and with a line break every print), and replacing:
