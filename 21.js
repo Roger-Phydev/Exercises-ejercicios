@@ -14,7 +14,7 @@ const calculator = array =>{
     for(i in array){
         if(i%2==0){
             try{ 
-                array[i]=parseInt(array[i]);
+                array[i]=parseFloat(array[i]);
             }catch{
                 return "error de formato";
             }
